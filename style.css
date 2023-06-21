@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/*Cabecera/Nav*/
+header{
+    background-color: rgb(243, 243, 170);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+header nav{
+   
+}
+
+header nav ul li{
+
+}
+
+/*Cuerpo*/
+main{
+    background-color:pink;
+}
+/*Footer*/
+footer{
+    background-color: #1E1E26;
+    ;
+}
+
+/*Generales*/
+#btn-contacto {
+    background-color: #8B48BF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  #btn-contacto:hover {
+    background-color: #ba60ff;
+  }
