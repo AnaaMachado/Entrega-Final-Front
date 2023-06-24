@@ -1,34 +1,546 @@
-#btn-contacto {
-    background-color: #4CAF50;
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Be Vietnam Pro';
+}
+/*Cabecera/Nav*/
+header{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding:50px 140px 50px 140px;
+}
+nav ul{ 
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+
+}
+nav ul li{
+  margin: 10px;
+}
+
+.img{
+  width: 540px;
+  height:461px;
+  transition: filter 0.3s;
+}
+
+.img:hover {
+  filter: grayscale(100%);
+}
+
+/*Cuerpo*/
+
+/*portada*/
+.portada{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    text-align: right;
+    padding: 150px;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+}
+
+h1{
+  font-size: 50px;
+  color: #232C50;
+}
+
+
+/*franja1*/
+.franja{
+  display: block;
+  background-color: #8B48BF;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 168px;
+}
+
+h2{
+  color: white;
+  font-size: 36px;
+  width: 400px;
+}
+
+.subcont{
+  width: 400px ;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+
+/*contenedor1*/
+.contenedor1{
+  background-color: #FAFAFA;
+}
+
+.cont1{
+  padding: 20px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  line-height: 30px;
+}
+
+.subcount1{
+  text-align: left;
+  display: flex;
+  justify-content: space-evenly;
   
-  #btn-contacto:hover {
-    background-color: #45a049;
+}
+
+.prueba1{
+  width: 437px;
+}
+
+/*contenedor2*/
+
+.contenedor2{
+  text-align: center;
+  margin: 0px 30px 0px 30px;
+  line-height: 150px;
+  
+}
+
+.cont2{
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.img123{
+  position: relative;
+  top: -30px;
+  transition: filter 0.3s,transform 0.3s;
+}
+
+.img123:hover {
+  filter: grayscale(100%);
+  transform: scale(1.2);
+}
+
+h5{
+  position: relative;
+  top: -20px;
+  font-size: 16px;
+  color: #323851;
+}
+
+h3{
+  font-size: 39px;
+  color: #323851;
+}
+
+/*Footer*/
+footer{
+  padding:50px 140px 50px 140px;
+  background-color: #1E1E26;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer ul{ font-family: Be Vietnam;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  list-style: none;
+}
+
+.update-form {
+  display: flex;
+  align-items: center;
+  width: 201px;
+}
+
+.update-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 15px;
+}
+
+.listfooter{
+  color: white;
+  list-style: none;
+}
+
+.listfooter ul{
+  line-height: 35px;
+}
+
+.letra1{
+  color: #000000;
+  padding:30px 0px;
+}
+
+.letra2{
+  padding-top: 10px;
+  color: #8C8C94;
+  font-size: 12px;
+}
+
+.iconos{
+  display: flex;
+  flex-direction: row;
+}
+
+.imgicon{
+  padding: 10px;
+  height: 20px;
+
+}
+
+/*Generales*/
+#btn-contacto {
+  background-color: #8B48BF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#btn-contacto:hover {
+  background-color: #ba60ff;
+}
+
+#btn-contacto2 {
+  background-color: white;
+  color: #8B48BF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#btn-contacto2:hover {
+  background-color: #d49ffd;
+}
+
+p{
+  font-size: 16px;
+  color: #B9B9C1;
+}
+
+.p1{
+  font-size: 16px;
+  color: #B9B9C1;
+  padding: 20px;
+}
+
+#btn-contacto3{
+  position: relative;
+  left: -60px;
+  background-color: #8B48BF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/*---------------------------------Media Query---------------------------------*/
+
+@media(max-width:600px){
+  
+*{
+  padding: 0%;
+  margin: 0%;
+}
+
+  header{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-/*_______________________________________*/
-  .update-form {
+    .portada{
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    text-align: right;
+    padding: 20px;
   }
-  
-  .update-input {
-    flex: 1;
+
+  .img{
     padding: 10px;
-    font-size: 16px;
+    width: 250px;
+    height:auto;
+    transition: filter 0.3s;
   }
-  
-  .go-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
+
+  .img:hover {
+    filter: grayscale(100%);
+  }
+
+  #btn-contacto {
+  background-color: #8B48BF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100px;
+  height:auto;
+}
+
+  .franja{
+    background-color: #3CDDF3;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .subcont{
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
     color: white;
-    border: none;
-    cursor: pointer;
+    width: 230px;
+  }
+
+
+/* contendeores*/
+
+
+.contenedor1{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  line-height: 15px;
+}
+
+.cont1{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    line-height: 15px;
+  }
+
+  .subcount1{
+  flex-direction:column;
+  }
+
+  .prueba1{
+  width: 200px;
+}
+
+#btn-contacto3{
+  position: relative;
+  left: -40px;
+  background-color: #8B48BF;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.contenedor2{
+  padding: 30px;
+  text-align: center;
+  margin: 0%;
+  line-height: 20px;
+}
+
+
+.cont2{
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+}
+
+
+.img123{
+  padding: 10px;
+  top: -1px;
+}
+
+
+#btn-contacto2 {
+  background-color: #232C50;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#btn-contacto2:hover {
+  background-color: #fafafa;
+  color: #232C50;
+}
+
+/* footer*/
+
+footer{
+  padding:40px;
+}
+
+footer ul{ font-family: Be Vietnam;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.update-form {
+  display: flex;
+  align-items: center;
+  width: 101px;
+  position: relative;
+  top: -90px;
+  left: -230px;
+}
+
+.update-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 15px;
+}
+
+.listfooter{
+  color: white;
+  list-style: none;
+  position:relative;
+  right: -25px;
+  top:-10px;
+  padding: 30px;
+}
+
+.listfooter ul{
+  line-height: 25px;
+}
+
+
+.letra2{
+  padding-top: 10px;
+  color: #8C8C94;
+  font-size: 10px;
+  position: relative;
+  top: 100px;
+  left: -260px;
+}
+
+.iconos{
+  height: 10px;
+  width: auto;
+  padding-top: 10px;
+  margin: 5px;
+}
+
+.foot2{
+  flex-direction: row;
+}
+
+.Logo2{
+  position: relative;
+  bottom: -120px;
+  right: -290px;
+}
+
+.iconos{
+  position: relative;
+  bottom: -40px;
+  right: -250px;
+}
+
+/* letras*/
+  h1{
+    width: 260px;
+    font-size: 20px;
+  }
+
+  .letra1{
+    font-size: 15px;
+    width: 260px;
   }
   
+  h2{
+    text-align: center;
+    font-size: 28px;
+    width: 300px;
+  }
+
+  h3{
+    font-size: 18px;
+
+  }
+
+  h5{
+
+    font-size: 12px;
+    background-color: #8b48bf2a;
+
+  }
+
+
+  p{
+    font-size: 12px;
+    width: 250px;
+  }
+.p1{
+  font-size: 12px ;
+  padding: 0%;
+}
+
+.letra2{
+  text-align: center;
+  position: relative;
+  bottom: -90px;
+}
+
+
+}
+
+@media screen and (min-width: 768px) {
+  .logo-img {
+      display: none;
+  }
+
+  #btn-container {
+    display: block;
+}
+
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  .logo-img {
+      display: inline-block;
+      max-width: 100%;
+  }
+
+  .menu {
+      display: none;
+  }
+
+  #btn-container {
+    display: none;
+}
+
+}
