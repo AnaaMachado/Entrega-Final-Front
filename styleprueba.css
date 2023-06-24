@@ -17,8 +17,15 @@ nav ul{
    list-style: none;
 
 }
-nav ul li{
+nav ul li a{
   margin: 10px;
+  transition: font-weight 0.3s;
+  text-decoration: none;
+  color: #232C50;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
 }
 
 .img{
@@ -252,6 +259,7 @@ p{
   border-radius: 25px;
   cursor: pointer;
 }
+
 
 /*---------------------------------Media Query---------------------------------*/
 
